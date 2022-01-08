@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.borde-degradado{
+    border: 2px solid ;
+
+}
+
+@layer components {
+    .todo {
+        @apply bg-veryDarkDesaturatedBlue; 
+        @apply flex; 
+        @apply justify-between; 
+        @apply items-center; 
+        @apply py-6; 
+        @apply border-b; 
+        @apply border-b-veryDarkGrayishBlue; 
+        @apply cursor-pointer;
+    }
+    .circle {
+        @apply rounded-full; 
+        @apply w-6; 
+        @apply h-6;
+    }
+}
+
+@media (max-width : 640px) {
+    .show {
+        display: block;
+    }
+}
